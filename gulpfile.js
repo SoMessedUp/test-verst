@@ -102,7 +102,7 @@ function building() {
         'src/img/compressed/**/*',
         'src/js/main.min.js',
         'src/**/*.html',
-        'src/fonts/*'
+        'src/fonts/**/*'
     ], {base : 'src'})
     .pipe(dest('build'))
 }
