@@ -12,11 +12,15 @@ function toggleElements(classes) {
 }
 
 function toggleNav(classes) {
-    toggleElements(classes);
-    const burgerButton = document.querySelector('.navigation__menu-button');
-    const logo = document.querySelector('.logo');
-    burgerButton.classList.toggle('active');
-    logo.classList.toggle('menu-opened')
+    if (window.innerWidth <= 860) {
+        toggleElements(classes);
+        const burgerButton = document.querySelector('.navigation__menu-button');
+        const logo = document.querySelector('.logo');
+        burgerButton.classList.toggle('active');
+        logo.classList.toggle('menu-opened');
+    } else {
+        return;
+    }
 }
 
 function toggleClassBasedOnWidth() {
