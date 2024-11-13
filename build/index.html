@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>NFT</title>
+    <link rel="stylesheet" href="css/style.min.css">
+  </head>
+  <body>
+    <div class="background-blur hidden"></div>
+    <div class="popup hidden"><img class="popup__ball-bg" src="/img/compressed/sprite.svg#popup__ball-bg" alt="">
+      <div class="popup__heading">Начни прямо сейчас!</div>
+      <div class="popup__text">Получи все нужные навыки для заработка на NFT всего за 28 дней!</div>
+      <input class="popup__input" type="text" placeholder="Ваш email">
+      <button class="button-one popup__button">Оплатить</button>
+      <div class="popup__close-button" onclick="toggleElements('.popup')">
+        <div class="menu-line"></div>
+        <div class="menu-line"></div>
+      </div>
+    </div>
+    <main class="main" id="main">
+      <header class="header"> 
+        <div class="header__background hidden"></div>
+        <div class="wrapper">
+          <nav class="navigation"><img class="logo" src="/img/compressed/logo.svg" alt="">
+            <div class="navigation__links hidden"><a class="navigation__link" href="#main" onclick="toggleNav('.navigation__links, .header__background')">Главная</a><a class="navigation__link" href="#benefits" onclick="toggleNav('.navigation__links, .header__background')">Что даст обучение</a>
+              <button class="navigation__button">Личный кабинет</button>
+            </div>
+          </nav>
+          <div class="navigation__menu-button" onclick="toggleNav('.navigation__links, .header__background')">
+            <div class="menu-line"></div>
+            <div class="menu-line"></div>
+          </div>
+        </div>
+      </header>
+      <div class="wrapper"><img class="main__ball-bg" src="/img/compressed/sprite.svg#main__ball-bg" alt="">
+        <div class="main__content">
+          <div class="main__column"><img class="main__ball-green" src="/img/compressed/sprite.svg#main__ball-green" alt="">
+            <h1 class="main__heading">Не упусти возможность войти в <strong>прибыльную нишу</strong></h1>
+            <p class="main__text">Получи все нужные навыки для заработка на NFT всего за 28 дней!</p>
+            <button class="main__button button-one" onclick="toggleElements('.popup')">Начать зарабатывать на NFT</button>
+          </div>
+<picture><source srcset="/img/compressed/main__img.avif" type="image/avif"><source srcset="/img/compressed/main__img.webp" type="image/webp"><img class="main__img" src="/img/compressed/main__img.png" alt=""></picture>
+        <h1 class="main__heading-mobile">Не упусти возможность войти в <strong>прибыльную нишу</strong></h1>
+      </div>
+    </main>
+    <div class="benefits" id="benefits">
+      <div class="benefits__block"><img class="benefits__ball-bg benefits__ball-bg-one" src="/img/compressed/sprite.svg#main__ball-bg" alt=""><img class="benefits__ball-bg benefits__ball-bg-two" src="/img/compressed/sprite.svg#main__ball-bg" alt=""><img class="benefits__ball-bg benefits__ball-pink" src="/img/compressed/sprite.svg#benefits__ball-pink" alt=""><img class="benefits__ball-bg benefits__ball-cyan" src="/img/compressed/sprite.svg#benefits__ball-cyan" alt=""><img class="benefits__ball-bg benefits__ball-pink-blur" src="/img/compressed/sprite.svg#benefits__ball-pink-blur" alt="">
+        <h2 class="benefits__heading">Что даст тебе обучение?</h2>
+        <div class="benefits__row">
+          <div class="benefits-element">
+<picture><source srcset="/img/compressed/benefits-element__img-star.avif" type="image/avif"><source srcset="/img/compressed/benefits-element__img-star.webp" type="image/webp"><img class="benefits-element__img" src="/img/compressed/benefits-element__img-star.png" alt=""></picture>
+            <p class="benefits-element__text">Откроешь свой первый криптокошелек и научишься с ним работать</p>
+            <div class="benefits-element__back"></div>
+          </div>
+          <div class="benefits-element">
+<picture><source srcset="/img/compressed/benefits-element__img-mouth.avif" type="image/avif"><source srcset="/img/compressed/benefits-element__img-mouth.webp" type="image/webp"><img class="benefits-element__img" src="/img/compressed/benefits-element__img-mouth.png" alt=""></picture>
+            <p class="benefits-element__text">Поймёшь, как выбирать правильные дропы</p>
+            <div class="benefits-element__back"></div>
+          </div>
+        </div>
+        <div class="benefits__row">
+          <div class="benefits-element">
+<picture><source srcset="/img/compressed/benefits-element__img-money.avif" type="image/avif"><source srcset="/img/compressed/benefits-element__img-money.webp" type="image/webp"><img class="benefits-element__img" src="/img/compressed/benefits-element__img-money.png" alt=""></picture>
+            <p class="benefits-element__text">Построишь план по быстрому приумножению заработанных средств</p>
+            <div class="benefits-element__back"></div>
+          </div>
+          <div class="benefits-element">
+<picture><source srcset="/img/compressed/benefits-element__img-cool.avif" type="image/avif"><source srcset="/img/compressed/benefits-element__img-cool.webp" type="image/webp"><img class="benefits-element__img" src="/img/compressed/benefits-element__img-cool.png" alt=""></picture>
+            <p class="benefits-element__text">Узнаешь кто такие холдеры и флипперы</p>
+            <div class="benefits-element__back"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../js/main.min.js"></script>
+  </body>
+</html>

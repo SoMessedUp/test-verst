@@ -1,0 +1,12 @@
+header.header 
+    .header__background.hidden
+    .wrapper
+        nav.navigation
+            img(src="/img/compressed/logo.svg", alt="" class='logo')
+            .navigation__links.hidden
+                a.navigation__link(href="#main" onclick="toggleNav('.navigation__links, .header__background')") Главная
+                a.navigation__link(href="#benefits" onclick="toggleNav('.navigation__links, .header__background')") Что даст обучение
+                button.navigation__button Личный кабинет
+        .navigation__menu-button(onclick="toggleNav('.navigation__links, .header__background')")
+            .menu-line
+            .menu-line
