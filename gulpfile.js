@@ -99,7 +99,7 @@ function cleanBuild() {
 function building() {
     return src([
         'src/css/style.min.css',
-        'src/img/compressed/**/*',
+        // 'src/img/compressed/**/*',
         'src/js/main.min.js',
         'src/**/*.html',
         'src/fonts/**/*'
